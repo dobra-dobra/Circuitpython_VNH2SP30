@@ -1,4 +1,4 @@
-# Circuitpython library for SparkFun Monter Moto Shield
+# Circuitpython library for SparkFun Monster Moto Shield
 Circuitpython port of Arduino library for SparkFun Monster Moto Shield
 This shield is designed for 5V devices, but it was tested with Adafruit Grand Central and it does work well. Except...
 
