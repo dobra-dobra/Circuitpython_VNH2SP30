@@ -8,20 +8,26 @@ Pins A2 and A3 are used for current sensing. Dependig on current draw from motor
 Linkt to the shield: https://www.sparkfun.com/products/10182
 
 ## Usage example
-Import library:
+### Import library:
+
 from vnh2sp30 import *
 
-Run motor 0 clockwise at 50% PWM:
+### Run motor 0 clockwise at 50% PWM:
+
 motorGo(0, CW, 32767)
 
-Run motor 1 counter clockwise at 100% PWM:
+### Run motor 1 counter clockwise at 100% PWM:
+
 motorGo(1, CCW, 65535)
 
-Brake motor 0 to VCC (block motor):
+### Brake motor 0 to VCC (block motor):
+
 motorGo(0, BRAKEVCC)
 
-Brake motor 1 to GND (without blocking):
+### Brake motor 1 to GND (without blocking):
+
 motorGo(1, BRAKEGND)
 
-Turn off motor 0:
+### Turn off motor 0:
+
 motorOff(0)
