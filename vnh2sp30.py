@@ -11,8 +11,10 @@ BRAKEGND = 3
 inApin = [digitalio.DigitalInOut(board.D7), digitalio.DigitalInOut(board.D4)]   # INA: Clockwise input
 inBpin = [digitalio.DigitalInOut(board.D8), digitalio.DigitalInOut(board.D9)]   # INB: Counter-clockwise input
 pwmpin = [pulseio.PWMOut(board.D5, frequency = 500, duty_cycle = 0), pulseio.PWMOut(board.D6, frequency = 500, duty_cycle = 0)]   # PWM input
-cspin = [2, 3]   # CS: Current sense ANALOG input
-enpin = [0, 1]   # EN: Status of switches output (Analog pin)
+
+# These pins are not used, but they were present in original library
+#cspin = [2, 3]   # CS: Current sense ANALOG input
+#enpin = [0, 1]   # EN: Status of switches output (Analog pin)
 
 statpin = digitalio.DigitalInOut(board.D13)
 statpin.direction = digitalio.Direction.OUTPUT
