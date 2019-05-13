@@ -3,7 +3,8 @@ Circuitpython port of Arduino library for SparkFun Monster Moto Shield
 This shield is designed for 5V devices, but it was tested with Adafruit Grand Central and it does work well. Except...
 
 ## Warning
-Pins A2 and A3 are used for current sensing. Dependig on current drawn by motors this may go above 3.3 V and damage your board. You may want to disable this feature by desoldering resistors R5 and R14 from the shield or by cutting header leads for pins A2 and A3.
+Pins A2 and A3 are used for current sensing. Dependig on current drawn by motors this may go above 3.3 V and damage your board (it's about 0.13 V per 1 A). You may want to disable this feature by desoldering resistors R5 and R14 from the shield or by cutting header leads for pins A2 and A3.
+Pins A0 and A1 (enable and diagnostic) are pulled up to 5V by resistor R8 and R17. They do not need to be controlled in normal operation, so the best option is to cut these leads. You may also use voltage level converter and connect them do A4 and A5.
 
 Linkt to the shield: https://www.sparkfun.com/products/10182
 
